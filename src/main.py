@@ -24,7 +24,7 @@ from starlette.templating import Jinja2Templates
 
 
 
-PATH_TO_VUE_APP_BUILD_DIR = f"/dist"
+PATH_TO_VUE_APP_BUILD_DIR = f"{os.path.dirname(os.path.realpath(__file__))}/dist"
 # For these files on root level, index.html fallback should not happen
 STATIC_TOP_LEVEL_FILES = [
     "favicon.ico",
